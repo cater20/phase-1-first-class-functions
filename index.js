@@ -1,19 +1,18 @@
 
 
 function receivesAFunction(callback){
-    let chai='spy';
+let chai='spy';
     callback();
 }
-function returnsANamedFunction(){
-    return function(){
 
-    }
-}
+  function returnsANamedFunction(){
+      return function namedfn(){
+        return 'this is a named function'
+      }
+  }  
+
 function returnsAnAnonymousFunction(){
-    return function ()
-    {
-return 'not to deeply equal';
-
-}
-    
+    return function (){
+        
+    }
 }
